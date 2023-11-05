@@ -1,6 +1,7 @@
 import forbes from 'data/forbes.json';
 import blogData from 'data/article.json';
-import statsData from 'data/data.json'
+import statsData from 'data/data.json';
+import  crypto from 'data/transactions.json';
 import {
   BlogCard,
   Container,
@@ -33,7 +34,7 @@ export const App = () => {
         <Heading marginTop="50px" marginBottom="50px" textAlign="center">
           Task 4
         </Heading>
-        <CryptoHistory />
+        <CryptoHistory cryptohistory={crypto} />
       </Container>
     </Section>
   );
